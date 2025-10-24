@@ -1,0 +1,20 @@
+/* pages/index.css */
+
+/* 1. Importar Normalize */
+@import url(../vendor/normalize.css);
+
+/* 2. Importar Fuentes Locales */
+@import url(../vendor/fonts.css);
+
+/* 3. Importar Estilos Globales del Bloque "page" */
+@import url(../blocks/page.css);
+
+/* 4. Importar todos los demás bloques BEM */
+@import url(../blocks/header.css);
+@import url(../blocks/lead.css);
+@import url(../blocks/intro.css);
+/* @import url(../blocks/photo-grid.css); */
+/* @import url(../blocks/places.css); */
+@import url(../blocks/footer.css);
+
+/* (Añade aquí @import para cada nuevo archivo .css que crees en la carpeta /blocks/) */

@@ -1,0 +1,53 @@
+/* ===== FAMILIA 'Inter' (Para párrafos y texto normal) ===== */
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400; /* Regular */
+  font-display: swap;
+  /* Ajusta la ruta a tu archivo .woff2 */
+  src: url("./fonts/Inter-4.1/extras/woff-hinted/Inter-Regular.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700; /* Bold */
+  font-display: swap;
+  /* Asumo que el nombre del archivo 'bold' es este, ¡verifícalo! */
+  src: url("./fonts/Inter-4.1/extras/woff-hinted/Inter-Bold.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900; /* Black */
+  font-display: swap;
+  /* Asumo que el nombre del archivo 'black' es este, ¡verifícalo! */
+  src: url("./fonts/Inter-4.1/extras/woff-hinted/Inter-Black.woff2")
+    format("woff2");
+}
+
+/* ===== FAMILIA 'Inter Display' (Para títulos grandes) ===== */
+
+@font-face {
+  font-family: "Inter Display";
+  font-style: normal;
+  font-weight: 400; /* Regular */
+  font-display: swap;
+  /* Esta es la ruta que tú proporcionaste */
+  src: url("./fonts/Inter-4.1/extras/woff-hinted/InterDisplay-Regular.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Inter Display";
+  font-style: normal;
+  font-weight: 900; /* Black */
+  font-display: swap;
+  /* Asumo que el nombre del archivo 'black' es este, ¡verifícalo! */
+  src: url("./fonts/Inter-4.1/extras/woff-hinted/InterDisplay-Black.woff2")
+    format("woff2");
+}

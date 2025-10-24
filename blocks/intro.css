@@ -1,0 +1,96 @@
+/* blocks/intro.css */
+
+.intro {
+  width: 64.84%;
+  max-width: 830px;
+  margin-left: 11.56%;
+  margin-top: 92px;
+  min-width: 290px;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro__title {
+  font-family: "Inter Display", "Inter", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 1.07;
+  color: #ffffff;
+  margin: 0;
+}
+
+.intro__text {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 700; /* Texto destacado */
+  font-size: 16px; /* Estimado */
+  line-height: 1.625; /* 26px */
+  color: #ffffff;
+  margin: 40px 0 0;
+}
+
+.intro__author {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 24px; /* Estimado */
+  line-height: 2.125;
+  color: #ffffff;
+  text-align: right;
+  margin: 10px 0 0;
+  max-width: 732px;
+  margin-left: auto;
+}
+
+.intro__details {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.625; /* 26px */
+  color: #ffffff;
+  margin: 32px 0 0;
+}
+
+/* ... (reglas anteriores de .intro) ... */
+
+/* Media Query para tablets y pantallas más pequeñas */
+@media screen and (max-width: 1023px) {
+  .intro {
+    /* Hacemos que ocupe más ancho y quitamos el margen izquierdo */
+    width: 90%;
+    margin-left: 0;
+    /* Lo centramos */
+    margin: 92px auto 0 auto;
+  }
+}
+
+/* Media Query para móviles */
+@media screen and (max-width: 425px) {
+  .intro {
+    /* Ocupa casi todo el ancho, con márgenes pequeños */
+    width: calc(100% - 32px); /* 16px de margen a cada lado */
+    margin-top: 64px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .intro__title {
+    font-size: 32px;
+    line-height: 1.09; /* 35px */
+  }
+
+  .intro__text {
+    font-size: 16px;
+    line-height: 1.25; /* 20px */
+  }
+
+  .intro__author {
+    font-size: 18px;
+    line-height: 1.2;
+    /* Reseteamos el ancho para que quepa */
+    max-width: 100%;
+  }
+
+  .intro__details {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+}
