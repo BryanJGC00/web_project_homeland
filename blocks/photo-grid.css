@@ -1,0 +1,57 @@
+.photo-grid {
+  width: 92.5%; /* Alineado con max-width de otros elementos para consistencia en 1280px */
+  max-width: 1184px;
+  margin: 92px auto 0; /* Margen superior para separación de intro, basado en Figma */
+}
+
+.photo-grid__items {
+  display: grid;
+  grid-template-columns: repeat(
+    4,
+    1fr
+  ); /* 4 columnas relativas para "4 y 4" en 2 filas */
+  grid-template-rows: repeat(
+    2,
+    auto
+  ); /* Filas automáticas para adaptarse al contenido */
+  gap: 12px; /* Espacio estándar entre imágenes, de Figma y cheatsheet de grid */
+}
+
+.photo-grid__item {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Evita distorsión al escalar, como recomienda el brief */
+}
+/* Media query para tablet (hasta 768px, cubre 769px-1279px con base, pero ajusta para cambio suave) */
+@media screen and (max-width: 768px) {
+  .photo-grid {
+    width: 93.75%; /* Ajuste para tablet, basado en Figma (ej. 720px efectivo) */
+    max-width: 720px;
+    margin-top: 88px; /* Reducir margen superior para proporción en pantallas medianas */
+  }
+
+  .photo-grid__items {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* 2 columnas relativas, crea 4 filas automáticas para 8 items */
+    gap: 14px; /* Gap ligeramente menor para ahorrar espacio vertical */
+  }
+}
+/* Media query para mobile (hasta 320px, cubre 321px-768px con el anterior, pero ajusta para small screens) */
+@media screen and (max-width: 320px) {
+  .photo-grid {
+    width: 100%; /* Llenar pantalla completa, usando % para responsividad */
+    max-width: 288px; /* Restringir para centrar en mobile pequeño */
+    margin-top: 64px; /* Margen más pequeño, como en ejemplos de lead/intro en cheatsheets */
+  }
+
+  .photo-grid__items {
+    grid-template-columns: 1fr; /* 1 columna, crea 8 filas automáticas */
+    gap: 12px; /* Gap mínimo para mobile, evita overflow vertical */
+  }
+
+  .photo-grid__item {
+    min-width: 288px; /* Restringir ancho mínimo para evitar estiramiento, de cheatsheet "Diseño responsivo" */
+  }
+}
