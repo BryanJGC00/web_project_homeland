@@ -217,11 +217,11 @@
   .places__button {
     width: 100%;
     padding: 10px 16px;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .places__description {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.2;
   }
 }
