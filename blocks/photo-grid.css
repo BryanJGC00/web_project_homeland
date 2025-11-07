@@ -7,8 +7,7 @@
 .photo-grid__items {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, auto);
-  gap: 16px; /* Figma desktop: 16px horizontal, 14px vertical → unifico en 16px para simplicidad y aprobación */
+  gap: 16px;
 }
 
 .photo-grid__item {
@@ -17,43 +16,36 @@
   object-fit: cover;
 }
 
-/* TABLET ≤768px */
+/* TABLET */
 @media screen and (max-width: 768px) {
   .photo-grid {
     width: 90%;
     max-width: 720px;
     margin-top: 88px;
-    padding: 0 24px; /* Padding lateral Figma exacto */
+    padding: 0 24px;
   }
-
   .photo-grid__items {
     grid-template-columns: repeat(2, 1fr);
-    gap: 16px; /* ¡ESPACIO PERFECTO! Horizontal y vertical como Figma */
+    gap: 16px;
   }
-
-  /* QUITAMOS full-bleed → imágenes con espacio lateral y gap visible */
   .photo-grid__item {
-    width: 100%; /* Normal, sin calc ni negative margin */
+    width: 100%;
     margin: 0;
-    max-width: none;
   }
 }
 
-/* MÓVIL ≤320px */
-@media screen and (max-width: 320px) {
+/* MÓVIL - AHORA ≤480px (incluye tus 430px) */
+@media screen and (max-width: 480px) {
   .photo-grid {
     width: 100%;
     max-width: none;
     margin-top: 64px;
-    padding: 0 16px; /* Padding lateral para centrar contenido */
+    padding: 0 16px;
   }
-
   .photo-grid__items {
     grid-template-columns: 1fr;
-    gap: 12px; /* Gap vertical Figma móvil */
+    gap: 12px;
   }
-
-  /* Full-bleed SÍ en móvil (1 columna → no overlap) */
   .photo-grid__item {
     margin: 0 -16px;
     width: calc(100% + 32px);

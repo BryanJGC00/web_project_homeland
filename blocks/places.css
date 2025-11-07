@@ -166,7 +166,7 @@
 }
 
 /* MÓVIL */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
   .places {
     width: 100%;
     max-width: none;
@@ -190,7 +190,7 @@
   }
 
   .places__artist {
-    margin-top: -12px;
+    margin-top: 0px;
   }
 
   .places__artist-title {
@@ -201,7 +201,7 @@
   }
 
   .places__artist-name {
-    margin: 0;
+    margin: 10px 0 0 0;
     font-size: 18px;
     line-height: 1.22;
     font-weight: 400;

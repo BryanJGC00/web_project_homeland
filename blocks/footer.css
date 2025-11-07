@@ -27,12 +27,12 @@
     width: auto;
   } /* Deja que fluya */
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 480px) {
   .footer {
-    margin-top: 48px;
+    margin-top: 68px;
     padding-bottom: 16px;
   }
   .footer__copyright {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
